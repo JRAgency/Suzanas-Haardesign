@@ -38,6 +38,15 @@ Servern (Hotlinking) geladen – das ist datenschutzfreundlich und schnell.
 | hochsteck-blond | Pexels (ID 1084719) | neosiam | Elegante Hochsteckfrisur |
 | braut-styling | Pexels (ID 3065096) | enginakyurt | Anlassfrisur mit Haarschmuck |
 
+## Echtes Teamfoto (Kundenmaterial, kein Stock)
+
+Das Teamfoto stammt vom Kunden selbst und zeigt das reale Team von Suzana's Haardesign.
+
+- **Original:** `images/team bild.png` (1536 × 768 px, 2:1) – bleibt unverändert im Projekt.
+- **Web-optimiert:** `assets/img/team-460.webp`, `-760.webp`, `-1200.webp`, `-1536.webp` (responsive `srcset`).
+- **Eingebunden auf:** „Über uns" (große, vollständige Teamsektion) und „Karriere" (in der Sektion „Kein Konzern. Ein Team.", ersetzt ein Stockfoto).
+- Keine Bearbeitung von Personen/Gesichtern, keine Namen/Rollen zugeordnet, nicht gespiegelt, kein Crop von Gesichtern. Alt-Text neutral („Team von Suzana's Haardesign …").
+
 ## Logo
 
 `assets/logo/logo.*` (dunkle Schrift für helle Flächen) und `assets/logo/logo-light.*`

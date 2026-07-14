@@ -1,5 +1,5 @@
 import { site, wa } from "../data.mjs";
-import { page, img, btn, eyebrow, icon, pageHero, breadcrumb } from "../layout.mjs";
+import { page, img, btn, eyebrow, icon, pageHero, breadcrumb, teamPhoto } from "../layout.mjs";
 
 const jsonld = [
   {
@@ -55,18 +55,16 @@ ${breadcrumb([{ label: "Start", href: "index.html" }, { label: "Über uns" }])}
 </section>
 
 <section class="section">
-  <div class="wrap split split--reverse">
-    <div class="split__media reveal">
-      ${img("detail-werkzeuge-holz", "Friseurwerkzeug auf warmem Holz", { sizes: "(max-width:760px) 90vw, 560px" })}
-    </div>
-    <div class="split__body reveal" data-delay="1">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:58ch">
       ${eyebrow("Unser Team")}
-      <h2 class="h-xl">Ein eingespieltes Team.</h2>
-      <p class="lead" style="margin-top:.75rem">Hinter Suzana's Haardesign steht ein kleines, erfahrenes Team, das über Jahre zusammengewachsen ist – verteilt auf unsere Salons in Brackenheim und Güglingen.</p>
-      <p class="muted" style="margin-top:1rem">Gerade weil wir überschaubar sind, kennt man dich bei uns. Du sitzt nicht bei „irgendwem“ auf dem Stuhl, sondern bei jemandem, der weiß, was dir steht.</p>
-      <div class="note-box" style="margin-top:1.5rem">Eine persönliche Vorstellung des Teams mit Namen und Fotos ergänzen wir gerne gemeinsam mit dem Salon – mit echten Bildern und dem Einverständnis aller Mitarbeiterinnen.</div>
-      <div class="mt-cta">${btn("Team kennenlernen? Schreib uns", wa.general, { variant: "ghost", icon: "whatsapp", external: true })}</div>
+      <h2 class="h-xl">Menschen, die ihr Handwerk lieben.</h2>
+      <p class="lead" style="margin-top:1rem">Hinter Suzana's Haardesign steht ein Team, das persönliche Beratung, sauberes Handwerk und ein gutes Miteinander verbindet. Mit Erfahrung, Gespür und Blick fürs Detail begleiten wir unsere Kundinnen und Kunden an unseren Standorten in Brackenheim und Güglingen.</p>
     </div>
+    <figure class="team-photo reveal" data-delay="1">
+      ${teamPhoto("Team von Suzana's Haardesign in schwarzer Kleidung vor hellem Hintergrund", { sizes: "(max-width:1240px) calc(100vw - 3rem), 1200px" })}
+    </figure>
+    <div class="mt-cta reveal">${btn("Team kennenlernen? Schreib uns", wa.general, { variant: "ghost", icon: "whatsapp", external: true })}</div>
   </div>
 </section>
 

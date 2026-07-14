@@ -1,5 +1,5 @@
 import { site, wa, careerFaq, locations } from "../data.mjs";
-import { page, img, btn, eyebrow, icon, pageHero, breadcrumb } from "../layout.mjs";
+import { page, img, btn, eyebrow, icon, pageHero, breadcrumb, teamPhoto } from "../layout.mjs";
 
 const faqLd = {
   "@context": "https://schema.org",
@@ -36,7 +36,9 @@ ${breadcrumb([{ label: "Start", href: "index.html" }, { label: "Karriere" }])}
       </div>
     </div>
     <div class="split__media reveal" data-delay="1">
-      ${img("atmosphaere-spiegel", "Heller Salonbereich mit Spiegeln", { sizes: "(max-width:760px) 90vw, 560px" })}
+      <figure class="team-photo team-photo--split">
+        ${teamPhoto("Team von Suzana's Haardesign", { sizes: "(max-width:760px) calc(100vw - 3rem), 540px" })}
+      </figure>
     </div>
   </div>
 </section>

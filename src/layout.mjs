@@ -29,6 +29,14 @@ export function img(name, alt, { kind = "content", sizes = "100vw", cls = "", ea
   return `<img src="${fallback}" srcset="${srcset}" sizes="${sizes}" alt="${alt}" decoding="async"${loading}${fetch} class="${cls}"${style}>`;
 }
 
+// ---- Echtes Teamfoto (2:1, lokal optimiert) --------------------------------
+export function teamPhoto(alt, { sizes = "100vw", eager = false } = {}) {
+  const widths = [460, 760, 1200, 1536];
+  const srcset = widths.map((w) => `assets/img/team-${w}.webp ${w}w`).join(", ");
+  const loading = eager ? "" : ' loading="lazy"';
+  return `<img src="assets/img/team-1200.webp" srcset="${srcset}" sizes="${sizes}" width="1536" height="768" alt="${alt}" decoding="async"${loading}>`;
+}
+
 // ---- Buttons ---------------------------------------------------------------
 export function btn(label, href, { variant = "primary", icon: ic = "", external = false, ariaLabel = "", sm = false, arrow: withArrow } = {}) {
   const rel = external ? ' target="_blank" rel="noopener"' : "";

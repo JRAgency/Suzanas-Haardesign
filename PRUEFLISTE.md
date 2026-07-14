@@ -25,7 +25,7 @@ Zentrale Datenquelle für Änderungen: **`src/data.mjs`** (danach `node build.mj
 ## 4. Geschichte & Team
 - [ ] Gründungsjahr **1993** (Brackenheim) und **2009** (Güglingen) bestätigen
 - [ ] Teamgröße **„fünfköpfig“** bestätigen
-- [ ] Persönliche Team-Vorstellung mit Namen/Fotos gewünscht? (nur mit echten Bildern & Einverständnis)
+- [x] Echtes Teamfoto eingebunden (Über uns + Karriere). Offen: Namen/Rollen der einzelnen Personen bewusst NICHT benannt – bei Wunsch mit Einverständnis ergänzen.
 
 ## 5. Bewertungen (Social Proof)
 - [ ] Aktuelle Google-Werte prüfen (angezeigt: Brackenheim **4,9 / 48**, Güglingen **4,7 / 23** – Stand aus Verzeichnissen). Werte in `src/data.mjs` unter `rating` aktualisierbar.
