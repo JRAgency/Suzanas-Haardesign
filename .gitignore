@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build-Ausgaben (die statischen *.html im Root sind bewusst versioniert)
+dist/
+build/
+coverage/
+
+# Umgebungs-/Geheimdateien
+.env
+.env.*
+*.local
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Editoren / IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs / temporär
+*.log
+npm-debug.log*
+.cache/
+tmp/
